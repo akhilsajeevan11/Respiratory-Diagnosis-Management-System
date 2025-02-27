@@ -1,0 +1,143 @@
+.doctorCard {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    margin: auto;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .doctorimage-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctor-images {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: rgba(144,238,144);
+  }
+  
+  .doctor-Details {
+    flex: 2;
+  }
+  
+  .doctor-name {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .verified-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+  }
+  
+  .doctorinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .doctorDegree {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .doctorexperience {
+    background: rgba(144,238,144);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .doctorexperience:hover {
+    background: rgba(3,167,55);
+  }
+  
+  .doctor-about {
+    margin-top: 10px;
+  }
+  
+  .about-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .about-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .appointment-fee {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  /* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .doctorCard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .doctorimage-container {
+      margin-bottom: 10px;
+    }
+  
+    .doctor-images {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .doctor-Details {
+      width: 100%;
+    }
+  
+    .doctor-name {
+      font-size: 20px;
+    }
+  
+    .doctorinfo {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .doctorDegree {
+      font-size: 14px;
+    }
+  
+    .doctorexperience {
+      font-size: 13px;
+      padding: 5px 12px;
+    }
+  
+    .about-title {
+      font-size: 16px;
+    }
+  
+    .about-text {
+      font-size: 13px;
+    }
+  }

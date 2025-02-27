@@ -1,0 +1,64 @@
+.speciality-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: #1f2937;
+}
+
+.speciality-content h1 {
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+    font-weight: 500;
+}
+
+.speciality-content p {
+    text-align: center;
+    font-size: 0.875rem; 
+    line-height: 1.25rem; 
+}
+
+.speciality-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 16px; 
+    padding-top: 20px;
+    width: 100%;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.speciality-cards::-webkit-scrollbar {
+    display: none; 
+}
+
+.speciality-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    transition: transform 0.2s ease-in-out;
+    /* background-color: rgba(209,243,197); */
+}
+
+.speciality-card:hover {
+    transform: scale(1.05);
+}
+
+.item-content {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.speciality-card a {
+    text-decoration: none;
+}

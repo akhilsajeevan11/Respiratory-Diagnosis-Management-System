@@ -1,0 +1,96 @@
+/* Centering the form */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* background-color: #f4f4f4; */
+  padding: 30px;
+}
+
+/* Styling the box */
+.auth-box {
+  background: white;
+  padding: 60px 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+
+  text-align: center;
+}
+
+/* Title */
+.auth-box h1 {
+  font-weight: bold;
+  color: rgb(35, 35, 35);
+  font-size: 24px;
+  /* text-align: left; */
+  margin-bottom: 15px;
+}
+.auth-box p{
+  font-size: 16px;
+  color: gray;
+}
+
+/* Inputs */
+.auth-box input,
+.auth-box select,
+.auth-box textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Textarea */
+.auth-box textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Gender & Date of Birth in one row */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.input-row select,
+.input-row input {
+  width: 50%; /* Each takes half width */
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(3,167,55);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.auth-box button:hover {
+  background: rgba(144,238,144);
+  font-weight: bold;
+}
+
+/* Links */
+.auth-box .link {
+  color: rgba(3,167,55);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-box .link:hover {
+  text-decoration: underline;
+}
+

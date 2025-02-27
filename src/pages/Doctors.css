@@ -1,0 +1,126 @@
+/* Uniquely styling this page without affecting others */
+.doctors-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.doctors-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+/* Wrapper - Flexbox for desktop, column for mobile */
+.doctors-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Sidebar */
+.doctors-sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+  
+.doctors-filter {
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+  
+.doctors-filter:hover {
+    background: rgba(209,243,197);
+}
+  
+/* Doctors List */
+.doctors-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 20px;
+    flex: 1;
+}
+
+/* Doctor Card */
+.doctor-card {
+    background: #f9f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+  
+/* Doctor Image */
+.doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(209,243,197);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+  
+/* Availability */
+.doctor-availability {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+/* Doctor Name & Speciality */
+.doctor-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+  
+.doctor-speciality {
+    color: gray;
+    font-size: 14px;
+}
+  
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .doctors-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-wrapper {
+        flex-direction: column; /* Stack sidebar above doctor list */
+        align-items: center;
+    }
+
+    .doctors-sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .doctors-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .doctors-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+}

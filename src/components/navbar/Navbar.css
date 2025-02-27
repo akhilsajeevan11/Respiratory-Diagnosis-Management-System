@@ -1,0 +1,149 @@
+/* Navbar Container */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    /* background-color: #f8f9fa; */
+    border-bottom: 1px solid grey;
+}
+
+/* Logo & Icon */
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-icon h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.icon {
+    font-size: 48px;
+    color: rgb(144,238,144);
+}
+
+/* Navigation Links */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* Active Link */
+ul a.active {
+    color: rgb(144,238,144);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(144,238,144);
+}
+
+ul a:hover {
+    color: rgb(144,238,144);
+}
+
+/* Button Styling */
+.btn-acc {
+    padding: 10px 15px;
+    background-color: rgb(144,238,144);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(144,238,144);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-acc:hover {
+    background-color: white;
+    color: #333;
+    border: 1px solid rgb(144,238,144);
+    
+}
+
+/* Profile Section */
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-icon {
+    width: 12px; /* Adjust size */
+    height: 12px; /* Adjust size */
+    margin-left: 9px; /* Reduce margin if needed */
+}
+
+/* Dropdown Menu */
+.drop-down {
+    position: absolute;
+    top: 100%; /* Show below profile image */
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 20;
+    display: none;
+}
+
+.drop-down div {
+    padding: 10px;
+    color: #4b5563;
+}
+
+.drop-down p {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.drop-down p:hover {
+    background-color: rgba(209,243,197);
+}
+
+/* Show dropdown when hovering over profile-container */
+.profile-container:hover .drop-down {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,110 @@
+/* Ensuring unique styles for Top Doctors page */
+.topdoctors-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .topdoctors-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .topdoctors-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Doctors List - Ensuring 5 Cards per Row */
+  .topdoctors-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .topdoctors-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .topdoctors-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .topdoctors-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(209,243,197);
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .topdoctors-availability {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .topdoctors-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .topdoctors-speciality {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .topdoctors-more-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: rgb(144,238,144);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .topdoctors-more-btn:hover {
+    background-color: rgba(3,167,55);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .topdoctors-list {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .topdoctors-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .topdoctors-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .topdoctors-list {
+      grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    }
+  }
